@@ -57,7 +57,7 @@ export default function Contact() {
 
   return (
     <div style={{ padding: '2rem' }}>
-      <h1>Contact Us</h1>
+      <h1>Contact Form</h1>
       <form onSubmit={handleSubmit}>
         <input
           name="name"

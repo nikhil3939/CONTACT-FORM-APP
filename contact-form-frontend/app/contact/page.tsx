@@ -11,6 +11,7 @@ export default function Contact() {
 
   const sendRequest = async () => {
     const res = await fetch('https://contact-form-backend-na8e.onrender.com/contact', {
+
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

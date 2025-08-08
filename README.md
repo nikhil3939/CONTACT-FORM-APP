@@ -20,13 +20,14 @@ This is a **professional full-stack contact form application** developed using:
 
 ## 📁 Project Structure
 
+```
 CONTACT-FORM-APP/
-├── contact-form-frontend/ # Frontend (Next.js App Router)
-│ └── app/contact/page.tsx # Contact form UI & submission logic
-├── contact-form-backend/ # Backend (Node.js + Express)
-│ └── index.js # Handles API POST requests
-└── README.md # Project documentation (this file)
-
+├── contact-form-frontend/       # Frontend (Next.js App Router)
+│   └── app/contact/page.tsx     # Contact form UI & submission logic
+├── contact-form-backend/        # Backend (Node.js + Express)
+│   └── index.js                 # Handles API POST requests
+└── README.md                    # Project documentation (this file)
+```
 
 ---
 
@@ -59,52 +60,91 @@ CONTACT-FORM-APP/
 ```bash
 git clone https://github.com/nikhil3939/CONTACT-FORM-APP.git
 cd CONTACT-FORM-APP
+```
 
-2. Start the Backend Server
+---
+
+### 2. Start the Backend Server
+
+```bash
 cd contact-form-backend
 npm install
 node index.js
+```
 
-✅ Backend runs on http://localhost:5000
+> ✅ Backend runs on `http://localhost:5000`
 
-3. Start the Frontend
+---
+
+### 3. Start the Frontend
+
 Open a new terminal:
+
+```bash
 cd contact-form-frontend
 npm install
 npm run dev
+```
 
-✅ Frontend runs on http://localhost:3000/contact
+> ✅ Frontend runs on `http://localhost:3000/contact`
 
-🔁 API Endpoint
-POST /contact
+---
 
-Request:
+## 🔁 API Endpoint
+
+### POST `/contact`
+
+- **Request**:
+```json
 {
   "name": "Your Name",
   "email": "youremail@example.com",
   "message": "Hello there!"
 }
+```
 
-Response:
+- **Response**:
+```json
 {
   "message": "Form received successfully"
 }
+```
 
-💡 Retry Logic (Render Sleep Handling)
+---
+
+## 💡 Retry Logic (Render Sleep Handling)
+
 The frontend includes a retry mechanism:
+- If the backend is sleeping (free Render tier), the first call may fail.
+- It waits 3 seconds and tries again automatically.
+- Ensures reliable form delivery for users/TL/HR.
 
-If the backend is sleeping (free Render tier), the first call may fail.
+---
 
-It waits 3 seconds and tries again automatically.
+## ✅ Status
 
-Ensures reliable form delivery for users/TL/HR.
+| Component      | Status      |
+|----------------|-------------|
+| Frontend (Vercel) | ✅ Online |
+| Backend (Render)  | ✅ Online |
+| Form Submission   | ✅ Working |
+| Retry Logic       | ✅ Verified |
 
-✅ Status
-Component	Status
-Frontend (Vercel)	✅ Online
-Backend (Render)	✅ Online
-Form Submission	✅ Working
-Retry Logic	✅ Verified
+---
 
-🙋‍♂️ Author
-Nikhil B.
+## 🙋‍♂️ Author
+
+**Nikhil B.**  
+📎 [LinkedIn](https://www.linkedin.com/in/nikhil-b-23b89327a)  
+📎 [GitHub](https://github.com/nikhil3939)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+> ✅ This project is part of my DevOps/Cloud training portfolio.
+> Designed for real-world practice in Git, CI/CD, deployment, and full-stack integration.

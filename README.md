@@ -140,11 +140,6 @@ The frontend includes a retry mechanism:
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 > ✅ This project is part of my DevOps/Cloud training portfolio.
 > Designed for real-world practice in Git, CI/CD, deployment, and full-stack integration.

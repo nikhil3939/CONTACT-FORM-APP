@@ -138,8 +138,3 @@ The frontend includes a retry mechanism:
 📎 [LinkedIn](https://www.linkedin.com/in/nikhil-b-23b89327a)  
 📎 [GitHub](https://github.com/nikhil3939)
 
----
-
-
-> ✅ This project is part of my DevOps/Cloud training portfolio.
-> Designed for real-world practice in Git, CI/CD, deployment, and full-stack integration.
